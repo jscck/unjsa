@@ -1,0 +1,102 @@
+.mini-paypass{
+    width: 240px;
+    height: 28px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* miniui*/
+.mini-paypass-border {
+    background: #fff;
+    border: solid 1px #a5acb5;
+    width: auto;
+    height: 22px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/*medium*/
+.mini-paypass-border {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 26px;
+}
+/*skin*/
+.mini-paypass-border {
+    background: #fff;
+    border-color: #d9d9d9;
+    border-radius: 3px;
+}
+
+.mini-paypass .bogusInput{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 0;
+}
+.mini-paypass .realInput{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    opacity:0;
+    border: 0px;
+
+}
+.mini-paypass .bogusInput input{
+    padding: 0;
+    width: 16.3%;
+    height: 100%;
+    float:left;
+    background: #fff;
+    text-align: center;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: none; 
+}
+.mini-paypass .bogusInput input + input{
+    border-left: 1px solid #d9d9d9;
+}
+
+.mini-paypass-focus .mini-paypass-border {
+    /* background-color: #fff; */
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(16,142,233,.2);
+}
+
+body .mini-paypass *{
+    box-sizing: content-box;
+}
+
+.mini-error .mini-paypass-border {
+    margin-right: 18px;
+}
+
+body .mini-invalid .mini-paypass-border{
+    border: red 1px solid;
+}
+
+
+body .mini-error .mini-paypass-border{
+    border-color: #ffa8a8;
+    background-color: #fff3f3;
+}
+
+body .mini-error .bogusInput input{
+    background-color: rgb(255, 243, 243);
+    border-color: rgb(255, 168, 168);
+}
+
+
+
