@@ -1,7 +1,7 @@
 # miniui-pptea
 
 
-miniui secondary development, in no source code situation.
+miniui secondary development
 
 
 
